@@ -35,16 +35,13 @@ public class BaseDriver {
 		String browserName = prop.getProperty("browser");
 		// String browserName = System.getProperty("browser");
 
-		if (browserName.equals("chromeheadless")) {
+		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
-			options.setHeadless(true);
+			options.addArguments("start-maximized");
+			options.addArguments("disable-infobars");
 			driver = new ChromeDriver(options);
-		} else if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
-			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe");

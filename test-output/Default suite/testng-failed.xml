@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="demoQaAuto.HomePageTest">
+      <class name="demoQaAuto.FormsPageTest">
         <methods>
-          <include name="verify_Elements_Link"/>
-          <include name="cloasBrowser"/>
           <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="verify_TextBox"/>
         </methods>
-      </class> <!-- demoQaAuto.HomePageTest -->
+      </class> <!-- demoQaAuto.FormsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11882" started-at="2020-08-20T20:08:45Z" finished-at="2020-08-20T20:08:56Z">
+  <suite name="Default suite" duration-ms="10881" started-at="2020-08-21T09:15:51Z" finished-at="2020-08-21T09:16:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11882" started-at="2020-08-20T20:08:45Z" finished-at="2020-08-20T20:08:56Z">
-      <class name="demoQaAuto.HomePageTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="launchBrowser" is-config="true" duration-ms="5037" started-at="2020-08-21T01:38:45Z" finished-at="2020-08-21T01:38:50Z">
+    <test name="Default test" duration-ms="10881" started-at="2020-08-21T09:15:51Z" finished-at="2020-08-21T09:16:02Z">
+      <class name="demoQaAuto.FormsPageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:demoQaAuto.FormsPageTest@3bb9a3ff]" name="launchBrowser" is-config="true" duration-ms="8028" started-at="2020-08-21T14:45:51Z" finished-at="2020-08-21T14:45:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="launchUrl" duration-ms="4825" started-at="2020-08-21T01:38:50Z" finished-at="2020-08-21T01:38:54Z">
+        <test-method status="PASS" signature="verify_Forms_Page_Link()[pri:0, instance:demoQaAuto.FormsPageTest@3bb9a3ff]" name="verify_Forms_Page_Link" duration-ms="302" started-at="2020-08-21T14:45:59Z" finished-at="2020-08-21T14:45:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="verify_Elements_Link()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="verify_Elements_Link" duration-ms="407" started-at="2020-08-21T01:38:54Z" finished-at="2020-08-21T01:38:55Z">
+        </test-method> <!-- verify_Forms_Page_Link -->
+        <test-method status="PASS" signature="verify_TextBox()[pri:0, instance:demoQaAuto.FormsPageTest@3bb9a3ff]" name="verify_TextBox" duration-ms="1662" started-at="2020-08-21T14:45:59Z" finished-at="2020-08-21T14:46:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Elements_Link -->
-        <test-method status="PASS" signature="verify_Alerts_Link()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="verify_Alerts_Link" duration-ms="225" started-at="2020-08-21T01:38:55Z" finished-at="2020-08-21T01:38:55Z">
+        </test-method> <!-- verify_TextBox -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:demoQaAuto.FormsPageTest@3bb9a3ff]" name="closeBrowser" is-config="true" duration-ms="861" started-at="2020-08-21T14:46:01Z" finished-at="2020-08-21T14:46:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Alerts_Link -->
-        <test-method status="PASS" signature="verify_Book_Link()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="verify_Book_Link" duration-ms="192" started-at="2020-08-21T01:38:55Z" finished-at="2020-08-21T01:38:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Book_Link -->
-        <test-method status="PASS" signature="verify_Forms_Link()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="verify_Forms_Link" duration-ms="185" started-at="2020-08-21T01:38:55Z" finished-at="2020-08-21T01:38:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Forms_Link -->
-        <test-method status="PASS" signature="verify_Interactions_Link()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="verify_Interactions_Link" duration-ms="112" started-at="2020-08-21T01:38:55Z" finished-at="2020-08-21T01:38:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Interactions_Link -->
-        <test-method status="PASS" signature="verify_Widgets_Link()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="verify_Widgets_Link" duration-ms="121" started-at="2020-08-21T01:38:56Z" finished-at="2020-08-21T01:38:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Widgets_Link -->
-        <test-method status="PASS" signature="cloasBrowser()[pri:0, instance:demoQaAuto.HomePageTest@3bb9a3ff]" name="cloasBrowser" is-config="true" duration-ms="742" started-at="2020-08-21T01:38:56Z" finished-at="2020-08-21T01:38:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cloasBrowser -->
-      </class> <!-- demoQaAuto.HomePageTest -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- demoQaAuto.FormsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

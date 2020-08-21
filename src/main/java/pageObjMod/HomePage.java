@@ -1,4 +1,4 @@
-package PageObjMod;
+package pageObjMod;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +18,9 @@ public class HomePage {
 	By interactions_btn = By.xpath("//div[@class='card mt-4 top-card'][5]");
 	By book_btn = By.xpath("//div[@class='card mt-4 top-card'][6]");
 	By mainHeader_txt = By.xpath("//div[@class='main-header']");
+
+	By textBox_btn = By.xpath("//span[text()='Text Box']");
+	By practiseForm_btn = By.xpath("//span[text()='Practise Form']");
 
 	public WebElement get_elements_btn() {
 		return driver.findElement(elements_btn);
@@ -45,5 +48,9 @@ public class HomePage {
 
 	public WebElement get_mainHeader_txt() {
 		return driver.findElement(mainHeader_txt);
+	}
+
+	public WebElement get_textBox_btn() {
+		return driver.findElement(textBox_btn);
 	}
 }

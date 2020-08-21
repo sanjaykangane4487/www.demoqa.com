@@ -1,5 +1,11 @@
 package demoQaAuto;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+
+import pageObjMod.HomePage;
+
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -11,8 +17,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import PageObjMod.HomePage;
 
 public class HomePageTest extends BaseDriver {
 	WebDriver driver;
@@ -29,49 +33,49 @@ public class HomePageTest extends BaseDriver {
 	@Test(priority = 0)
 	public void launchUrl() {
 		driver.get(prop.getProperty("url"));
-		Assert.assertEquals(driver.getTitle(), "ToolsQA");
+		AssertJUnit.assertEquals(driver.getTitle(), "ToolsQA");
 		//hp = new HomePage(driver);
 	}
 
 	@Test(priority = 1)
 	public void verify_Elements_Link() {
 		js.executeScript("arguments[0].click();", hp.get_elements_btn());
-		Assert.assertEquals(hp.get_mainHeader_txt().getText(), "Elements");
+		AssertJUnit.assertEquals(hp.get_mainHeader_txt().getText(), "Elements");
 	}
 
 	@Test(priority = 2)
 	public void verify_Forms_Link() {
 		driver.navigate().back();
 		js.executeScript("arguments[0].click();", hp.get_forms_btn());
-		Assert.assertEquals(hp.get_mainHeader_txt().getText(), "Forms");
+		AssertJUnit.assertEquals(hp.get_mainHeader_txt().getText(), "Forms");
 	}
 
 	@Test(priority = 2)
 	public void verify_Alerts_Link() {
 		driver.navigate().back();
 		js.executeScript("arguments[0].click();", hp.get_alerts_btn());
-		Assert.assertEquals(hp.get_mainHeader_txt().getText(), "Alerts, Frame & Windows");
+		AssertJUnit.assertEquals(hp.get_mainHeader_txt().getText(), "Alerts, Frame & Windows");
 	}
 
 	@Test(priority = 2)
 	public void verify_Widgets_Link() {
 		driver.navigate().back();
 		js.executeScript("arguments[0].click();", hp.get_widgets_btn());
-		Assert.assertEquals(hp.get_mainHeader_txt().getText(), "Widgets");
+		AssertJUnit.assertEquals(hp.get_mainHeader_txt().getText(), "Widgets");
 	}
 
 	@Test(priority = 2)
 	public void verify_Interactions_Link() {
 		driver.navigate().back();
 		js.executeScript("arguments[0].click();", hp.get_interactions_btn());
-		Assert.assertEquals(hp.get_mainHeader_txt().getText(), "Interactions");
+		AssertJUnit.assertEquals(hp.get_mainHeader_txt().getText(), "Interactions");
 	}
 
 	@Test(priority = 2)
 	public void verify_Book_Link() {
 		driver.navigate().back();
 		js.executeScript("arguments[0].click();", hp.get_book_btn());
-		Assert.assertEquals(hp.get_mainHeader_txt().getText(), "Book Store");
+		AssertJUnit.assertEquals(hp.get_mainHeader_txt().getText(), "Book Store");
 	}
 
 	@AfterClass
