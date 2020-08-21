@@ -25,7 +25,7 @@ public class BaseDriver {
 	public Properties prop;
 	public WebDriverWait wait;
 	JavascriptExecutor js;
-	public static Logger log = LogManager.getLogger(HomePageTest.class.getName());
+	//public static Logger log = LogManager.getLogger(HomePageTest.class.getName());
 
 	public WebDriver initializeDriver() throws IOException {
 		prop = new Properties();
