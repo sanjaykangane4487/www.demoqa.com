@@ -62,7 +62,7 @@ public class FormsPageTest extends BaseDriver {
 		System.out.println("Entered mobile number");
 		fp.get_dobInput_box().click();
 		System.out.println("clicked on DOB");
-		reusableMethods.dateSelcetor(fp.get_datePicker(), "04/April/1987");
+		reusableMethods.dateSelcetor(fp.get_datePicker(), "30/April/1987");
 		System.out.println("Dob Selected");
 	}
 

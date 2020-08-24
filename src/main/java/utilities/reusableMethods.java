@@ -15,8 +15,9 @@ public class reusableMethods {
 		month.selectByVisibleText(arrDob[1]);
 
 		cal.findElement(
-				By.xpath("//div[contains(@class,'react-datepicker__day react-datepicker__day--0" + arrDob[0] + "')]"))
-				.click();
+				By.xpath("//div[contains(@class,'react-datepicker__day react-datepicker__day--0"+arrDob[0]+"') and contains(@aria-label,'"+arrDob[1]+"')]")).click();
+		
+		// 
 
 	}
 }
